@@ -8,6 +8,7 @@ layout: page
     .sidebar ul { list-style: none; padding: 0; }
     .sidebar li { margin-bottom: 10px; border-bottom: 1px solid #ccc; }
     .sidebar a { text-decoration: none; color: #007bff; font-weight: bold; }
+    
 </style>
 
 <div class="course-container">
@@ -30,3 +31,32 @@ layout: page
         {{ content }}
     </div>
 </div>
+
+
+<a href="https://jeff-0101.github.io/wegoCourse/" class="back-to-home">
+  返回首頁
+</a>
+
+<style>
+  .back-to-home {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #007bff;
+    color: white !important; /* 確保顏色不被其他樣式覆蓋 */
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none !important;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 9999;
+    transition: all 0.3s ease;
+  }
+
+  .back-to-home:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px); /* 懸浮時稍微往上飄 */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  }
+</style>
